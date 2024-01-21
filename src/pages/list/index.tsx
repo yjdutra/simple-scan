@@ -1,13 +1,26 @@
-import { StatusBar } from 'expo-status-bar';
-import React from 'react';
+import { StatusBar } from "expo-status-bar";
+import React from "react";
 
-import { Container, Text } from "./styles";
+import { Container } from "./styles";
 
-export default function AppList() {
+import Header from "../../components/Header";
+import Contact from "../../components/contact";
+import TableList from "../../components/tableList";
+
+export default function List() {
   return (
     <Container>
-      <Text>List!</Text>
       <StatusBar style="light" />
+      <Header title="Contato" />
+      
+      <TableList
+        data={[
+          ["Menu do Restaurante", "https://menu.example.com"],
+          ["Perfil no Instagram", "https://instagram.com/example"],
+        ]}
+      />
+
+      <Contact />
     </Container>
   );
 }

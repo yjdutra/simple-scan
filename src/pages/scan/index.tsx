@@ -3,13 +3,16 @@ import React from "react";
 
 import { Container, Text } from "./styles";
 
-const AppForm: React.FC = () => {
+import  Header  from "../../components/Header";
+
+const Scan: React.FC = () => {
   return (
     <Container>
-      <Text>Form!</Text>
+      <Header title="Scan" />
+      <Text>Scan!</Text>
       <StatusBar style="light" />
     </Container>
   );
 };
 
-export default AppForm;
+export default Scan;

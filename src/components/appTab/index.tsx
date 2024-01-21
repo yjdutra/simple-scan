@@ -2,8 +2,8 @@ import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
-import AppList from '../../pages/list/index';
-import AppForm from '../../pages/form/index';
+import Scan from '../../pages/scan';
+import List from '../../pages/list';
 
 const { Navigator, Screen } = createBottomTabNavigator();
 
@@ -27,8 +27,8 @@ function AppTab(): JSX.Element {
                     tabBarIconStyle: { display: "none" }
                 }}
             >
-                <Screen name="AppList" component={AppList} />
-                <Screen name="AppForm" component={AppForm} />
+                <Screen name="Scan" component={Scan} />
+                <Screen name="Contact" component={List} />
             </Navigator>
         </NavigationContainer>
     );
