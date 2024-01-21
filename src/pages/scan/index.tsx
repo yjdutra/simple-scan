@@ -4,13 +4,20 @@ import React from "react";
 import { Container, Text } from "./styles";
 
 import  Header  from "../../components/Header";
+import Cam from "../../components/Cam";
+import { CamContainment, Containment } from "../list/styles";
 
 const Scan: React.FC = () => {
   return (
     <Container>
       <Header title="Scan" />
+      
       <Text>Scan!</Text>
-      <StatusBar style="light" />
+      <Containment>
+        <CamContainment> 
+          <Cam/>
+        </CamContainment>
+      </Containment>
     </Container>
   );
 };

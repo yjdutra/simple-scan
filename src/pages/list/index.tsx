@@ -4,7 +4,7 @@ import React from "react";
 import { Container } from "./styles";
 
 import Header from "../../components/Header";
-import Contact from "../../components/contact";
+import Contact from "../../components/Contact";
 import TableList from "../../components/tableList";
 
 export default function List() {
